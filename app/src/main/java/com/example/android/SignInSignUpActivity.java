@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 
@@ -26,6 +28,7 @@ public class SignInSignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent signIn = new Intent(SignInSignUpActivity.this, SignInActivity.class);
                 startActivity(signIn);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
 
@@ -34,6 +37,7 @@ public class SignInSignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent signUp = new Intent(SignInSignUpActivity.this, SignUpActivity.class);
                 startActivity(signUp);
+                overridePendingTransition(R.anim.enter, R.anim.exit);
             }
         });
     }

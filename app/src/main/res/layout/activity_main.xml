@@ -5,6 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     android:background="@drawable/human_illustration"
 
     android:fitsSystemWindows="true"
@@ -14,38 +15,39 @@
         android:id="@+id/logo"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_90sdp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="72dp"
         android:src="@drawable/devs_drop_white_logo_02"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/sitka_display"
         android:text="Confusion is a part of programming."
         android:textColor="@color/white"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="324dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/sitka_display"
         android:text="-Felienne Hermans"
         android:textColor="@color/white"
         android:textSize="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

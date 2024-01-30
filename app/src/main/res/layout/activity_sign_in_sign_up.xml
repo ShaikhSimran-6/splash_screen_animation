@@ -14,7 +14,7 @@
         android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="488dp"
         android:backgroundTint="@color/midnight_blue"
         android:text="Sign In"
         android:textAllCaps="true"
